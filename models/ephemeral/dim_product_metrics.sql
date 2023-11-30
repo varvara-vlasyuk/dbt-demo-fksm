@@ -1,12 +1,12 @@
 {{
 config(
      unique_key='dim_product_key'
-    ,tags='dim'
+    ,tags='eph'
     ,alias='dim_product_agg'
 )
 }}
 
-SELECT
+SELECTdbt 0
 
     pa.dim_product_key             AS dim_product_key,
     pa.product_id                  AS product_id,

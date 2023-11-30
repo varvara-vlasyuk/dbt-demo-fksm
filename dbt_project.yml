@@ -32,8 +32,9 @@ clean-targets:         # directories to be removed by `dbt clean`
 # files using the `{{ config(...) }}` macro.
 models:
   dbt_demo:
-    # Config indicated by + and applies to all files under models/example/
-    # example:
-    #   +materialized: view
     sales_datamarts:
        +materialized: table
+    ephemeral:
+       +materialized: view
+    scd2:
+       +materialized: view

@@ -2,7 +2,8 @@
     config(
         materialized = 'incremental',
         unique_key = 'customer_key',
-        alias='dim_customer_base'
+        alias='dim_customer_base',
+        tag='scd2'
     )
 }}
 

@@ -2,7 +2,7 @@
 config(
     materialized='view'
     ,unique_key='dim_customer_key'
-    ,tags='dim' 
+    ,tags='scd2'
 )
 }}
 

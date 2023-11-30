@@ -15,4 +15,4 @@ SELECT
     MD5(CAST(c.c_nationkey AS STRING) || CAST(n.n_regionkey AS STRING)) AS dim_geography_key
 FROM {{source('silver_tpch','customer')}}     AS c
 JOIN {{source('silver_tpch','nation')}}       AS n ON c.c_nationkey = n.n_nationkey
-JOIN {{source('silver_tpch','region')}}       AS r ON n.n_regionkey = r.r_regionkey;
+JOIN {{source('silver_tpch','region')}}       AS r ON n.n_regionkey = r.r_regionkey
