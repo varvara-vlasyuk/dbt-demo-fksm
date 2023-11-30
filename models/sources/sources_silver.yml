@@ -1,0 +1,15 @@
+version: 2
+sources:
+- name: silver_tpch
+  description: ''
+  catalog: silver
+  schema: tpch
+  tables:
+  - name: customer
+  - name: orders
+  - name: partsupp
+  - name: lineitem
+  - name: region
+  - name: supplier
+  - name: part
+  - name: nation
