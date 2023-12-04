@@ -1,4 +1,33 @@
 {
-    "turntable.warehouse": "databricks",
-    "turntable.dbtVersion": "1.6"
+    // this is so you can easily jump to your compiled SQL files
+    "findrelated.workspaceRulesets": [
+        {
+            "name": "sql",
+            "rules": [
+                {
+                    "pattern": "^(.*/)?models/(.*/)?(.+\\.sql)$",
+                    "locators": [
+                        "**/compiled/**/$3"
+                    ]
+                },
+                {
+                    "pattern": "^(.*/)?compiled/(.*/)?(.+\\.sql)$",
+                    "locators": [
+                        "**/run/**/$3"
+                    ]
+                },
+                {
+                    "pattern": "^(.*/)?run/(.*/)?(.+\\.sql)$",
+                    "locators": [
+                        "**/models/**/$3"
+                    ]
+                }
+            ]
+        }
+    ],
+    "findrelated.applyRulesets": [
+        "sql"
+    ],
+    "dbt.queryLimit": 500,
+    "dbt.enableNewQueryPanel": false
 }

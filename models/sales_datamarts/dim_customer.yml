@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: dim_customer
+    columns:
+      - name: dim_customer_key
+        tests:
+          - col_is_not_null
+      - name: customer_key
+      - name: name
+      - name: address
+      - name: phone
+      - name: account_balance
+      - name: market_segment
+      - name: dim_geography_key

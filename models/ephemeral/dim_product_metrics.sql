@@ -6,7 +6,7 @@ config(
 )
 }}
 
-SELECTdbt 0
+SELECT
 
     pa.dim_product_key             AS dim_product_key,
     pa.product_id                  AS product_id,

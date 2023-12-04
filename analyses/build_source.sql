@@ -1,0 +1,1 @@
+{{ codegen.generate_source(schema_name= 'tpch', database_name= 'silver', generate_columns=True) }}

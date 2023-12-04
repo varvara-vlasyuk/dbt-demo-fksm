@@ -1,4 +1,4 @@
-{% test not_null(model, column_name) %}
+{% test col_is_not_null(model, column_name) %}
 
     select *
     from {{ model }}
